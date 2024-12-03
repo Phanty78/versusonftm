@@ -50,7 +50,7 @@ export default function GameLibrary() {
           <GameSection
             title="ESTFOR KINGDOM"
             description="Create a hero, gain exp. and fight to become stronger and find loot! Items can be traded on the marketplace for $BRUSH. Join a clan to further your experience!"
-            imageSrc="/images/estfor-kingdom.png"
+            imageSrc="/estforkingdom.webp"
             playLink="https://estfor.com/home"
           />
 

@@ -14,10 +14,10 @@ export default function About() {
 
           <div className="mb-12">
             <Image
-              src="/images/ftm-versus-logo.png"
+              src="/logo.webp"
               alt="FTM Versus Logo"
-              width={200}
-              height={200}
+              width={575}
+              height={434}
               className="mx-auto rounded-full"
             />
           </div>
@@ -50,14 +50,14 @@ export default function About() {
               Behind FTM Versus! is a passionate team of blockchain enthusiasts,
               game developers, and esports professionals. We combine our
               expertise to deliver the best possible experience for our users
-              and push the boundaries of what&paos;s possible in web3 gaming.
+              and push the boundaries of what&apos;s possible in web3 gaming.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">Join Us</h2>
             <p className="text-lg mb-4">
-              Whether you&paos;re a gamer looking for your next challenge or a
+              Whether you&apos;re a gamer looking for your next challenge or a
               developer interested in integrating your game with our platform,
               we invite you to join the FTM Versus! community. Together, we can
               shape the future of blockchain gaming!

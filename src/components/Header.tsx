@@ -30,6 +30,12 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="/gamelibrary"
+            className="hover:text-gray-300 transition-colors"
+          >
+            Game Library
+          </Link>
+          <Link
             href="/tournaments"
             className="hover:text-gray-300 transition-colors"
           >
@@ -83,6 +89,12 @@ export default function Header() {
         >
           <Link href="/" className="block px-4 py-2 text-sm hover:bg-blue-600">
             Home
+          </Link>
+          <Link
+            href="/gamelibrary"
+            className="block px-4 py-2 text-sm hover:bg-blue-600"
+          >
+            Game Library
           </Link>
           <Link
             href="/tournaments"
