@@ -56,7 +56,11 @@ export default function Tournaments() {
   return (
     <>
       <main className="flex min-h-screen flex-col">
-        <div className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="relative flex min-h-screen flex-col items-center justify-between p-8 md:p-16 lg:p-24 pt-24">
+          <div
+            className="absolute inset-0 bg-repeat opacity-40"
+            style={{ backgroundImage: "url('/background-light.webp')" }}
+          ></div>
           <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
             <h1 className="text-4xl font-bold text-center mb-8">
               FTM Versus! Tournaments
@@ -72,7 +76,7 @@ export default function Tournaments() {
                   .map((tournament) => (
                     <div
                       key={tournament.id}
-                      className="border border-gray-200 rounded-lg p-6 shadow-md"
+                      className="border border-gray-200 rounded-lg p-6 shadow-md bg-white"
                     >
                       <h3 className="text-xl font-bold mb-2">
                         {tournament.name}
@@ -105,7 +109,7 @@ export default function Tournaments() {
                   .map((tournament) => (
                     <div
                       key={tournament.id}
-                      className="border border-gray-200 rounded-lg p-6 shadow-md"
+                      className="border border-gray-200 rounded-lg p-6 shadow-md bg-white"
                     >
                       <h3 className="text-xl font-bold mb-2">
                         {tournament.name}
@@ -130,7 +134,7 @@ export default function Tournaments() {
               </div>
             </section>
 
-            <section>
+            <section className="bg-white rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 Host Your Own Tournament
               </h2>

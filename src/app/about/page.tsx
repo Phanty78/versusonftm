@@ -3,7 +3,11 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="relative flex min-h-screen flex-col items-center justify-between p-8 md:p-16 lg:p-24 pt-24">
+        <div
+          className="absolute inset-0 bg-repeat opacity-40"
+          style={{ backgroundImage: "url('/background-light.webp')" }}
+        ></div>
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
           <h1 className="text-4xl font-bold text-center mb-8">
             About FTM Versus!
@@ -19,7 +23,7 @@ export default function Home() {
             />
           </div>
 
-          <section className="mb-12">
+          <section className="mb-12 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
             <p className="text-lg mb-4">
               FTM Versus! is dedicated to revolutionizing the world of
@@ -30,7 +34,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-12 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">What We Offer</h2>
             <ul className="list-disc list-inside text-lg">
               <li>Cutting-edge tournament infrastructure</li>
@@ -41,7 +45,7 @@ export default function Home() {
             </ul>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-12 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
             <p className="text-lg mb-4">
               Behind FTM Versus! is a passionate team of blockchain enthusiasts,
@@ -51,7 +55,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section>
+          <section className="mb-12 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">Join Us</h2>
             <p className="text-lg mb-4">
               Whether you&apos;re a gamer looking for your next challenge or a

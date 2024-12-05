@@ -5,14 +5,14 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="bg-customblue  text-white w-full">
+    <section className="bg-customblue  text-white w-full border-b-4 border-gray-800">
       <div className="relative mx-auto px-6 text-center">
         <Image
           src="/background-light.webp"
           alt="background fantasia light"
           fill
           layout="reponsive"
-          className="object-cover opacity-60"
+          className="object-cover opacity-40"
         />
         <div className="relative z-10 pt-28">
           <h2 className="text-4xl font-bold mb-4 text-gray-800">

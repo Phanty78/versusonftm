@@ -5,7 +5,11 @@ export default function GameLibrary() {
   return (
     <>
       <main className="flex min-h-screen flex-col pt-12">
-        <div className="flex min-h-screen flex-col items-center justify-between p-4 md:p-8">
+        <div className="relative flex min-h-screen flex-col items-center justify-between p-4 md:p-8">
+          <div
+            className="absolute inset-0 bg-repeat opacity-40"
+            style={{ backgroundImage: "url('/background-light.webp')" }}
+          ></div>
           <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
             <h1 className="text-4xl font-bold text-center mb-8">
               Welcome to Web3 Gaming on Fantom

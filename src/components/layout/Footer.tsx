@@ -3,7 +3,7 @@ import { FaEnvelope, FaTelegram, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 border-t-4 border-gray-100">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">

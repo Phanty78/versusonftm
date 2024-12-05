@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Mint() {
   return (
-    <section className="py-20 bg-gray-100">
-      <div className=" mx-auto flex flex-col items-center justify-center">
+    <section className=" bg-gray-100">
+      <div className=" mx-auto flex flex-col items-center justify-center bg-gray-800 text-white">
         <Image
           src="/mint-banner.webp"
           width={1280}
@@ -12,7 +12,7 @@ export default function Mint() {
           alt="Mint"
           layout="responsive"
         />
-        <h2 className="text-3xl font-bold mb-4 text-center">
+        <h2 className="text-3xl font-bold mb-4 text-center mt-4">
           MINT YOUR VERSUS! ACCESS PASS NOW!
         </h2>
         <p className="text-lg mb-8 text-center">
@@ -26,7 +26,7 @@ export default function Mint() {
           href="https://ftmversus.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-blue-600 font-bold py-8 px-24 rounded-full hover:bg-blue-100 transition duration-300 text-2xl"
+          className="bg-white mb-6  text-blue-600 text-2xl font-bold py-6 px-12  rounded-full hover:bg-gray-400 transition duration-300"
         >
           Mint
         </Link>
