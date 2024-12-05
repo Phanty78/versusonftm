@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import Link from 'next/link'
 
 interface Tournament {
@@ -56,103 +54,103 @@ const tournaments: Tournament[] = [
 
 export default function Tournaments() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <Header />
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-          <h1 className="text-4xl font-bold text-center mb-8">
-            FTM Versus! Tournaments
-          </h1>
+    <>
+      <main className="flex min-h-screen flex-col">
+        <div className="flex min-h-screen flex-col items-center justify-between p-24">
+          <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
+            <h1 className="text-4xl font-bold text-center mb-8">
+              FTM Versus! Tournaments
+            </h1>
 
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-4">
-              Upcoming Tournaments
-            </h2>
-            <div className="grid gap-6">
-              {tournaments
-                .filter((t) => t.status === 'upcoming')
-                .map((tournament) => (
-                  <div
-                    key={tournament.id}
-                    className="border border-gray-200 rounded-lg p-6 shadow-md"
-                  >
-                    <h3 className="text-xl font-bold mb-2">
-                      {tournament.name}
-                    </h3>
-                    <p>
-                      <strong>Game:</strong> {tournament.game}
-                    </p>
-                    <p>
-                      <strong>Date:</strong> {tournament.date}
-                    </p>
-                    <p>
-                      <strong>Prize Pool:</strong> {tournament.prizePool}
-                    </p>
-                    <Link
-                      href={`/tournaments/${tournament.id}`}
-                      className="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">
+                Upcoming Tournaments
+              </h2>
+              <div className="grid gap-6">
+                {tournaments
+                  .filter((t) => t.status === 'upcoming')
+                  .map((tournament) => (
+                    <div
+                      key={tournament.id}
+                      className="border border-gray-200 rounded-lg p-6 shadow-md"
                     >
-                      View Details
-                    </Link>
-                  </div>
-                ))}
-            </div>
-          </section>
+                      <h3 className="text-xl font-bold mb-2">
+                        {tournament.name}
+                      </h3>
+                      <p>
+                        <strong>Game:</strong> {tournament.game}
+                      </p>
+                      <p>
+                        <strong>Date:</strong> {tournament.date}
+                      </p>
+                      <p>
+                        <strong>Prize Pool:</strong> {tournament.prizePool}
+                      </p>
+                      <Link
+                        href={`/tournaments/${tournament.id}`}
+                        className="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                      >
+                        View Details
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            </section>
 
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-4">Past Tournaments</h2>
-            <div className="grid gap-6">
-              {tournaments
-                .filter((t) => t.status === 'completed')
-                .map((tournament) => (
-                  <div
-                    key={tournament.id}
-                    className="border border-gray-200 rounded-lg p-6 shadow-md"
-                  >
-                    <h3 className="text-xl font-bold mb-2">
-                      {tournament.name}
-                    </h3>
-                    <p>
-                      <strong>Game:</strong> {tournament.game}
-                    </p>
-                    <p>
-                      <strong>Date:</strong> {tournament.date}
-                    </p>
-                    <p>
-                      <strong>Prize Pool:</strong> {tournament.prizePool}
-                    </p>
-                    <Link
-                      href={`/tournaments/${tournament.id}`}
-                      className="mt-4 inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Past Tournaments</h2>
+              <div className="grid gap-6">
+                {tournaments
+                  .filter((t) => t.status === 'completed')
+                  .map((tournament) => (
+                    <div
+                      key={tournament.id}
+                      className="border border-gray-200 rounded-lg p-6 shadow-md"
                     >
-                      View Results
-                    </Link>
-                  </div>
-                ))}
-            </div>
-          </section>
+                      <h3 className="text-xl font-bold mb-2">
+                        {tournament.name}
+                      </h3>
+                      <p>
+                        <strong>Game:</strong> {tournament.game}
+                      </p>
+                      <p>
+                        <strong>Date:</strong> {tournament.date}
+                      </p>
+                      <p>
+                        <strong>Prize Pool:</strong> {tournament.prizePool}
+                      </p>
+                      <Link
+                        href={`/tournaments/${tournament.id}`}
+                        className="mt-4 inline-block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+                      >
+                        View Results
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">
-              Host Your Own Tournament
-            </h2>
-            <p className="text-lg mb-4">
-              Are you a game developer or community leader interested in hosting
-              your own tournament on FTM Versus!? We&apos;d love to hear from
-              you!
-            </p>
-            <div className="text-center">
-              <a
-                href="mailto:fantomversus.team@gmail.com"
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block"
-              >
-                Contact Us to Host
-              </a>
-            </div>
-          </section>
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">
+                Host Your Own Tournament
+              </h2>
+              <p className="text-lg mb-4">
+                Are you a game developer or community leader interested in
+                hosting your own tournament on FTM Versus!? We&apos;d love to
+                hear from you!
+              </p>
+              <div className="text-center">
+                <a
+                  href="mailto:fantomversus.team@gmail.com"
+                  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-block"
+                >
+                  Contact Us to Host
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-      <Footer />
-    </main>
+      </main>
+    </>
   )
 }

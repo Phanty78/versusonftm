@@ -22,19 +22,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/tournaments" className="hover:text-gray-300">
-                  Tournaments
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-gray-300">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/gamelibrary" className="hover:text-gray-300">
+                <Link href="/game-library" className="hover:text-gray-300">
                   Game Library
                 </Link>
+                <li>
+                  <Link href="/tournaments" className="hover:text-gray-300">
+                    Tournaments
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-gray-300">
+                    About
+                  </Link>
+                </li>
               </li>
             </ul>
           </div>

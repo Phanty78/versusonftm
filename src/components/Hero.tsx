@@ -1,44 +1,28 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="bg-customblue  text-white">
+    <section className="bg-customblue  text-white w-full">
       <div className="relative mx-auto px-6 text-center">
         <Image
           src="/background-light.webp"
           alt="background fantasia light"
           fill
           layout="reponsive"
-          className="object-cover opacity-70"
+          className="object-cover opacity-60"
         />
         <div className="relative z-10 pt-28">
-          <motion.h1
-            className="text-5xl font-bold mb-4 text-gray-800"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <h2 className="text-4xl font-bold mb-4 text-gray-800">
             Welcome to the premier tournament hosting platform on the Fantom
             Blockchain!
-          </motion.h1>
-          <motion.p
-            className="text-2xl mb-8 text-gray-800"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+          </h2>
+          <p className="text-2xl mb-8 text-gray-800">
             Join the exciting world of competitive gaming on Fantom
-          </motion.p>
-          <motion.div
-            className="flex flex-wrap justify-center gap-4"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="https://t.me/FTM_Versus"
               target="_blank"
@@ -77,17 +61,12 @@ export default function Hero() {
             >
               $FTM Web3 Game Library
             </Link>
-          </motion.div>
-          <motion.div
-            className="mt-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <p className="text-xl font-bold text-gray-800">
+          </div>
+          <div className="mt-8">
+            <p className="text-xl font-bold text-gray-800 break-words">
               Tournament Wallet: 0x2c89af97E37D82F7eadF90BC945353D8062B1B66
             </p>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
