@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 interface Tournament {
@@ -134,7 +135,7 @@ export default function Tournaments() {
               </div>
             </section>
 
-            <section className="bg-white rounded-lg shadow-md p-6">
+            <section className="bg-white rounded-lg shadow-md p-6 mb-4">
               <h2 className="text-2xl font-semibold mb-4">
                 Host Your Own Tournament
               </h2>
@@ -152,6 +153,23 @@ export default function Tournaments() {
                 </a>
               </div>
             </section>
+            <div className=" w-full flex justify-center items-center">
+              <Image
+                src="/fantasia-screen.webp"
+                alt="Fantasia holding a game controller"
+                width={512}
+                height={512}
+                loading="lazy"
+              />
+            </div>
+            <div className="mt-12 text-center">
+              <Link
+                href="/"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded text-xl"
+              >
+                Go Home
+              </Link>
+            </div>
           </div>
         </div>
       </main>

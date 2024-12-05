@@ -1,4 +1,5 @@
 import GameSection from '@/components/GameSection'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function GameLibrary() {
@@ -55,11 +56,20 @@ export default function GameLibrary() {
               imageSrc="/estforkingdom.webp"
               playLink="https://estfor.com/home"
             />
+            <div className=" w-full flex justify-center items-center">
+              <Image
+                src="/fantasia-top-body.webp"
+                alt="Fantasia holding a game controller"
+                width={512}
+                height={512}
+                loading="lazy"
+              />
+            </div>
 
             <div className="mt-12 text-center">
               <Link
                 href="/"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded text-xl"
               >
                 Go Home
               </Link>

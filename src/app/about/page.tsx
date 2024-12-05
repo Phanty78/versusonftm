@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function Home() {
+export default function About() {
   return (
     <main className="flex min-h-screen flex-col">
       <div className="relative flex min-h-screen flex-col items-center justify-between p-8 md:p-16 lg:p-24 pt-24">
@@ -74,6 +75,23 @@ export default function Home() {
               </a>
             </div>
           </section>
+          <div className=" w-full flex justify-center items-center">
+            <Image
+              src="/fantasia-glasses.webp"
+              alt="Fantasia holding a game controller"
+              width={512}
+              height={512}
+              loading="lazy"
+            />
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded text-xl"
+            >
+              Go Home
+            </Link>
+          </div>
         </div>
       </div>
     </main>

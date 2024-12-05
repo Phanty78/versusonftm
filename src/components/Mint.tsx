@@ -11,11 +11,12 @@ export default function Mint() {
           height={248}
           alt="Mint"
           layout="responsive"
+          loading="lazy"
         />
         <h2 className="text-3xl font-bold mb-4 text-center mt-4">
           MINT YOUR VERSUS! ACCESS PASS NOW!
         </h2>
-        <p className="text-lg mb-8 text-center">
+        <p className="text-lg mb-8 text-center p-4">
           FTM Versus! Access passes are your key to all things $VERSUS! Holders
           will enjoy free entry to all of our tournaments, access to airdrops,
           and more! Burn one of each color to unlock the Black Access Pass.
