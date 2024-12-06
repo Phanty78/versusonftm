@@ -63,18 +63,21 @@ const Navbar = () => {
             <Link
               href="/game-library"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to libray page"
             >
               Game Library
             </Link>
             <Link
               href="/tournaments"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to tournaments page"
             >
               Tournaments
             </Link>
             <Link
               href="/about"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to about page"
             >
               About
             </Link>
@@ -83,6 +86,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to ftm versus twitter"
             >
               <FaTwitter size={20} />
             </a>
@@ -91,6 +95,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to ftm versus telegram"
             >
               <FaTelegram size={20} />
             </a>
@@ -151,6 +156,7 @@ const Navbar = () => {
             href="/game-library"
             className="block text-white hover:text-gray-300 transition-colors"
             onClick={closeMenu}
+            aria-label="link to libray page"
           >
             Game Library
           </Link>
@@ -158,6 +164,7 @@ const Navbar = () => {
             href="/tournaments"
             className="block text-white hover:text-gray-300 transition-colors"
             onClick={closeMenu}
+            aria-label="link to tournaments page"
           >
             Tournaments
           </Link>
@@ -165,6 +172,7 @@ const Navbar = () => {
             href="/about"
             className="block text-white hover:text-gray-300 transition-colors"
             onClick={closeMenu}
+            aria-label="link to about page"
           >
             About
           </Link>
@@ -174,6 +182,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to ftm versus twitter"
             >
               <FaTwitter size={20} />
             </a>
@@ -182,6 +191,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
+              aria-label="link to ftm versus telegram"
             >
               <FaTelegram size={20} />
             </a>

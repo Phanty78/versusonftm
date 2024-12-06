@@ -13,6 +13,7 @@ export default function Hero() {
           fill
           layout="reponsive"
           className="object-cover opacity-50"
+          priority
         />
         <div className="relative z-10 pt-28">
           <h2 className="text-4xl font-bold mb-4 text-gray-800">
