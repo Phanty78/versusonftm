@@ -62,7 +62,7 @@ export default function Hero() {
             </Link>
             <Link
               aria-label="Link to FTM Web3 Game Library"
-              href="/gamelibrary"
+              href="/game-library"
               className="bg-blue-600  text-white  font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
             >
               $FTM Web3 Game Library
