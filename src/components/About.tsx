@@ -1,4 +1,22 @@
 export default function About() {
+  const cards = [
+    {
+      title: 'Community',
+      description:
+        'Join our community of web3 gamers sharing our passion of crypto and gaming. Versus! offers tournaments for all our favorite games.',
+    },
+    {
+      title: 'Innovation',
+      description:
+        'Pushing the boundaries of Web3 gaming marketing with bold new strategies, like our Access Pass and Game Token Faucet.',
+    },
+    {
+      title: 'Rewards',
+      description:
+        'Get rewarded for holding! Airdrops, giveaways, and tournament prizes are all available to our holders.',
+    },
+  ]
+
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-6">
@@ -11,13 +29,10 @@ export default function About() {
           ecosystem on Fantom by bringing awareness through competition!
         </p>
         <div className="grid md:grid-cols-3 gap-8">
-          {['Community', 'Innovation', 'Rewards'].map((item) => (
-            <div key={item} className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-4">{item}</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+          {cards.map((item, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
