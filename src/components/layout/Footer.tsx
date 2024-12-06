@@ -16,22 +16,22 @@ export default function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
             <ul className="text-sm">
-              <li>
+              <li className="py-1">
                 <Link href="/" className="hover:text-gray-300">
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="py-1">
                 <Link href="/game-library" className="hover:text-gray-300">
                   Game Library
                 </Link>
               </li>
-              <li>
+              <li className="py-1">
                 <Link href="/tournaments" className="hover:text-gray-300">
                   Tournaments
                 </Link>
               </li>
-              <li>
+              <li className="py-1">
                 <Link href="/about" className="hover:text-gray-300">
                   About
                 </Link>
