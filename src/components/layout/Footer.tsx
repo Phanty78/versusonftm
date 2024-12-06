@@ -25,16 +25,16 @@ export default function Footer() {
                 <Link href="/game-library" className="hover:text-gray-300">
                   Game Library
                 </Link>
-                <li>
-                  <Link href="/tournaments" className="hover:text-gray-300">
-                    Tournaments
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-gray-300">
-                    About
-                  </Link>
-                </li>
+              </li>
+              <li>
+                <Link href="/tournaments" className="hover:text-gray-300">
+                  Tournaments
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-gray-300">
+                  About
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,6 +46,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300"
+                aria-label="link to ftm versus twitter"
               >
                 <FaTwitter size={24} />
               </a>
@@ -54,12 +55,14 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-300"
+                aria-label="link to ftm versus telegram"
               >
                 <FaTelegram size={24} />
               </a>
               <a
                 href="mailto:fantomversus.team@gmail.com"
                 className="hover:text-gray-300"
+                aria-label="send a mail to ftm versus team"
               >
                 <FaEnvelope size={24} />
               </a>
