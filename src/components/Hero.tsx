@@ -26,6 +26,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="https://t.me/FTM_Versus"
+              aria-label="Join FTM Versus Telegram Group"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600  text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
@@ -34,6 +35,7 @@ export default function Hero() {
             </Link>
             <Link
               href="https://www.dextools.io/app/en/fantom/pair-explorer/0x4bbecd638188ed3f871bf44422f4016c22f2de3a?t=1712657375709"
+              aria-label="Price chart of FTM Versus token on Dextools"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600  text-white  font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
@@ -42,6 +44,7 @@ export default function Hero() {
             </Link>
             <Link
               href="https://equalizer.exchange/swap?outputCurrency=0xe816B19b673088C02F3c9e03bC4A66E1eF676CF7"
+              aria-label="Buy FTM Versus token on Equalizer"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600  text-white  font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
@@ -50,6 +53,7 @@ export default function Hero() {
             </Link>
             <Link
               href="https://bridge.equalizer.exchange/"
+              aria-label="Bridge to Fantom"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600  text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
@@ -57,6 +61,7 @@ export default function Hero() {
               Bridge to $FTM
             </Link>
             <Link
+              aria-label="Link to FTM Web3 Game Library"
               href="/gamelibrary"
               className="bg-blue-600  text-white  font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition duration-300"
             >

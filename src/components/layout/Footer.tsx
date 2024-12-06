@@ -73,6 +73,20 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} FTM Versus!. All rights reserved.
           </p>
+          <p>
+            Made with ❤️ by Maël Donnart, Hire me on{' '}
+            {
+              <Link
+                href="https://www.malt.fr/profile/maeldonnart"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Hire Maël Donnart - Web Developer - Freelancer on Malt"
+                className="hover:text-orange-800 text-orange-400"
+              >
+                Malt
+              </Link>
+            }
+          </p>
         </div>
       </div>
     </footer>

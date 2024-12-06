@@ -28,7 +28,7 @@ export default function About() {
         <div className="my-4 flex justify-center items-center">
           <Image
             src="/fantasia-moon.webp"
-            alt="FTM Versus Logo"
+            alt="fantasia with moon behind her"
             width={512}
             height={512}
             loading="lazy"
@@ -51,7 +51,7 @@ export default function About() {
         <div className="my-4 flex justify-center items-center">
           <Image
             src="/fantasia-money.webp"
-            alt="FTM Versus Logo"
+            alt="Fantasia throw money"
             width={512}
             height={512}
             loading="lazy"
